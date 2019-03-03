@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agni</title>
+    <link rel="stylesheet" href="css/agni.css">
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="wrapper">
+                <div class="logo-space">
+                   <a href="javascript:void(0)"><img src="assets/Logo.png" alt="Agnii Logo"></a>
+                    <span class="dropdown">
+                        <span onclick="myFunction()" class="dropbtn">Eng<i class="fa fa-angle-down"></i></span>
+                        <ul id="myDropdown" class="dropdown-content">
+                            <li><a href="javascript:void(0)">Eng</a></li>
+                            <li><a href="javascript:void(0)">Hindi</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <nav class="navigation-menu">
+                   <ul class="main-menu">
+                       <li class="main-menu-item"><a href="javascript:void(0)"><i class="fa fa-home"></i></a></li>
+                       <li class="main-menu-item"><a onclick="myFunction1()" class="submenu" href="javascript:void(0)">About<i class="fa fa-angle-down"></i></a>
+                           <ul id="myDropdown1" class="dropdown-content-hover clearFix">
+                               <li class="sub-menu-item"><a href="javascript:void(0)">About Us</a></li>
+                               <li class="sub-menu-item"><a href="javascript:void(0)">Services</a></li>
+                               <li class="sub-menu-item"><a href="javascript:void(0)">Team</a></li>
+                               <li class="sub-menu-item"><a href="javascript:void(0)">Join Our Team</a>
+                               <!--      <ul class="dropdown-content-hover sub-sub-menu">
+                                        <li class="sub-menu-item"><a href="javascript:void(0)">Sub-menu</a></li>
+                                        <li class="sub-menu-item"><a href="javascript:void(0)">Sub-menu</a></li>
+                                        <li class="sub-menu-item"><a href="javascript:void(0)">Sub-menu</a></li>
+                                    </ul> -->
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="main-menu-item"><a href="javascript:void(0)">Ecosystems</a></li>
+                       <li class="main-menu-item"><a href="javascript:void(0)">Resources</a></li>
+                       <li class="main-menu-item"><a href="javascript:void(0)">Contact Us</a></li>
+                       <li class="main-menu-item"><a href="javascript:void(0)"><img src="assets/user.png" alt="user logo"></a></li>
+                   </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section-slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <p class="slider-para">Home > About > Partners</p>
+                <div class="slider-content">
+                    <h1>Partners</h1>
+                    <p>Interested in becoming a partner?</p>
+                    <button type="button">Get Involved</button>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="featured-video">
+            <h2>Featured Videos</h2>
+            <div class="wrapper1">
+                <div class="video-section">
+                    <div class="video-section-left">
+                        <div class="video-section-left-content">
+                            <h4>Juhee Ahmed</h4>
+                            <p>CEO,Fab CI</p>
+                        </div>
+                        <div class="orange-circle">
+
+                        </div>
+                        <div class="white-play-button">
+
+                        </div>
+                    </div>
+                    <div class="video-section-right">
+                        <span class="arrow-up"><i class="fa fa-angle-up"></i></span>
+                        <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+                        <div class="video-small">
+                            <div class="video-small-img">
+                            </div>
+                            <div class="video-small-content">
+                                <h3>Dr. Mudrika Khandelwal</h3>
+                                <p>Assistant Proffessor, IIT</p>
+                            </div>
+                            <div class="orange-circle-right"></div>
+                            <div class="white-play-button-right"></div>
+                        </div>
+                        <div class="video-small">
+                            <div class="video-small-img active-image">
+                            </div>
+                            <div class="video-small-content">
+                                <h3>Dr. Mudrika Khandelwal</h3>
+                                <p>Assistant Proffessor, IIT</p>
+                            </div>
+                            <div class="orange-circle-right"></div>
+                            <div class="white-play-button-right"></div>
+                        </div>
+                        <div class="video-small">
+                            <div class="video-small-img">
+                            </div>
+                            <div class="video-small-content">
+                                <h3>Dr. Mudrika Khandelwal</h3>
+                                <p>Assistant Proffessor, IIT</p>
+                            </div>
+                            <div class="orange-circle-right"></div>
+                            <div class="white-play-button-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+         }
+    </script>
+
+    <script>
+        $(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.main-menu li').hover(function(){
+                $(this).children('.dropdown-content-hover').stop().fadeToggle();
+            })
+        })
+    </script>
+
+</body>
+</html>
